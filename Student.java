@@ -8,5 +8,15 @@ public class Student {
     // store grades from student
     private ArrayList<Integer> grades;
 
+    // create constructor method that runs automaticaly whe a student object is created, with two parameters student id and name
+    public Student(String studentID, String name){
+        // assign value to instance var, use this to refer to id inside object
+        this.studentID = studentID;
+        // assign value to instance var, use this to refer to name inside object
+        this.name = name;
+        // create an empty array list to store grades
+        this.grades = new ArrayList<>();
+    }
+
 
 }
