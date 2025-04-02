@@ -29,5 +29,18 @@ public class Student {
     public ArrayList<Integer> getGrades(){
         return grades;
     }
-    
+    // create a method to add grade into grades arraylist
+    public void addGrades(int grade){
+        // check if grade is between 0 and 100
+        if (grade >= 0 && grade <=100) {
+            // add grade to grades array
+            grades.add(grade);
+        }
+        else{
+            // if it is not between 0-100 then invalid
+            System.out.println("Invalid Grade");
+        }
+    }
+
+
 }
