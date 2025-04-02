@@ -41,6 +41,28 @@ public class Student {
             System.out.println("Invalid Grade");
         }
     }
+    // create a method to calculate the average grade as a double
+    public double calculateAverage(){
+        // create double variable for the average
+        double avg = 0;
+        // create double sum variable
+        double sum = 0;
+        // create length variable and set to the length of the array
+        int length = grades.size();
 
+        // check if array is empty, if itis then return the starter avg
+        if (grades.size() == 0) {
+            return avg;
+        }
 
+        // for loop to iterate through the grades, to add up each grade
+        for (Integer grade : grades) {
+            // the sum which starts at 0 is equal to the grade, each time in loop it adds to the sum
+            sum += grade;
+        }
+        avg = sum / length;
+        
+        return avg;
+    }
+    
 }
