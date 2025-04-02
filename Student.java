@@ -15,8 +15,19 @@ public class Student {
         // assign value to instance var, use this to refer to name inside object
         this.name = name;
         // create an empty array list to store grades
-        this.grades = new ArrayList<>();
+        this.grades = new ArrayList<Integer>();
     }
-
-
+    // create getter method to retrieve student ID
+    public String getStudentID(){
+        return studentID;
+    }
+    // create getter method to retrieve name
+    public String getName(){
+        return name;
+    }
+    // create getter method to retrieve grade
+    public ArrayList<Integer> getGrades(){
+        return grades;
+    }
+    
 }
